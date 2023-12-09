@@ -1,0 +1,95 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &2114700365956607393
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: ab04c0b1b3671ad4f87ac37fc5e20027, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.832204
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ab04c0b1b3671ad4f87ac37fc5e20027, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -7.6922894
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ab04c0b1b3671ad4f87ac37fc5e20027, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 10.509323
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ab04c0b1b3671ad4f87ac37fc5e20027, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ab04c0b1b3671ad4f87ac37fc5e20027, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ab04c0b1b3671ad4f87ac37fc5e20027, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ab04c0b1b3671ad4f87ac37fc5e20027, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ab04c0b1b3671ad4f87ac37fc5e20027, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ab04c0b1b3671ad4f87ac37fc5e20027, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ab04c0b1b3671ad4f87ac37fc5e20027, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ab04c0b1b3671ad4f87ac37fc5e20027, type: 3}
+      propertyPath: m_Name
+      value: future_car
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects:
+    - {fileID: 3742651584844192364, guid: ab04c0b1b3671ad4f87ac37fc5e20027, type: 3}
+    - {fileID: -5437474187158184586, guid: ab04c0b1b3671ad4f87ac37fc5e20027, type: 3}
+    - {fileID: -36072610491402060, guid: ab04c0b1b3671ad4f87ac37fc5e20027, type: 3}
+    - {fileID: -2321315630709168712, guid: ab04c0b1b3671ad4f87ac37fc5e20027, type: 3}
+    - {fileID: 1481446466610817334, guid: ab04c0b1b3671ad4f87ac37fc5e20027, type: 3}
+    - {fileID: 3827488607781607525, guid: ab04c0b1b3671ad4f87ac37fc5e20027, type: 3}
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: -4005340283340729583, guid: ab04c0b1b3671ad4f87ac37fc5e20027, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5738317902616700673}
+  m_SourcePrefab: {fileID: 100100000, guid: ab04c0b1b3671ad4f87ac37fc5e20027, type: 3}
+--- !u!1 &6139181433070206640 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -4005340283340729583, guid: ab04c0b1b3671ad4f87ac37fc5e20027, type: 3}
+  m_PrefabInstance: {fileID: 2114700365956607393}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &5738317902616700673
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6139181433070206640}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -8094759680949461969, guid: ab04c0b1b3671ad4f87ac37fc5e20027, type: 3}
