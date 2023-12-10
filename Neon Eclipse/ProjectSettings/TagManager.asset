@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Charger
   - Ground
+  - Cube
+  - Waypoints
+  - Enemy
+  - DamagedMaterial
   layers:
   - Default
   - TransparentFX

@@ -15,7 +15,7 @@ D:/NeonEclipse/Neon Eclipse
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-62452
+62901
 Successfully changed project path to: D:/NeonEclipse/Neon Eclipse
 D:/NeonEclipse/Neon Eclipse
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,12 +49,12 @@ D:/NeonEclipse/Neon Eclipse
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [20556] Host "[IP] 192.168.1.108 [Port] 0 [Flags] 2 [Guid] 2392817893 [EditorId] 2392817893 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-TAGQ0IR) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [19996] Host "[IP] 192.168.1.108 [Port] 0 [Flags] 2 [Guid] 659546317 [EditorId] 659546317 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-TAGQ0IR) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [20556] Host "[IP] 192.168.1.108 [Port] 0 [Flags] 2 [Guid] 2392817893 [EditorId] 2392817893 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-TAGQ0IR) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [19996] Host "[IP] 192.168.1.108 [Port] 0 [Flags] 2 [Guid] 659546317 [EditorId] 659546317 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-TAGQ0IR) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 7 workers.
-Refreshing native plugins compatible for Editor in 23.72 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 13.76 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.11f1 (d00248457e15)
 [Subsystems] Discovering subsystems at path D:/Unity/2022.3.11f1/Editor/Data/Resources/UnitySubsystems
@@ -70,44 +70,44 @@ Initialize mono
 Mono path[0] = 'D:/Unity/2022.3.11f1/Editor/Data/Managed'
 Mono path[1] = 'D:/Unity/2022.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'D:/Unity/2022.3.11f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56620
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56324
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/Unity/2022.3.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.008573 seconds.
-- Loaded All Assemblies, in  0.733 seconds
+Registered in 0.023588 seconds.
+- Loaded All Assemblies, in  1.430 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.530 seconds
-Domain Reload Profiling: 1264ms
-	BeginReloadAssembly (255ms)
+- Finished resetting the current domain, in  0.778 seconds
+Domain Reload Profiling: 2207ms
+	BeginReloadAssembly (404ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (2ms)
-	RebuildCommonClasses (77ms)
-	RebuildNativeTypeToScriptingClass (24ms)
-	initialDomainReloadingComplete (96ms)
-	LoadAllAssembliesAndSetupDomain (279ms)
-		LoadAssemblies (251ms)
+	RebuildCommonClasses (305ms)
+	RebuildNativeTypeToScriptingClass (44ms)
+	initialDomainReloadingComplete (232ms)
+	LoadAllAssembliesAndSetupDomain (444ms)
+		LoadAssemblies (403ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (274ms)
-			TypeCache.Refresh (271ms)
-				TypeCache.ScanAssembly (245ms)
+		AnalyzeDomain (437ms)
+			TypeCache.Refresh (434ms)
+				TypeCache.ScanAssembly (394ms)
 			ScanForSourceGeneratedMonoScriptInfo (1ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (532ms)
+	FinalizeReload (779ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (411ms)
+		SetupLoadedEditorAssemblies (592ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (15ms)
-			SetLoadedEditorAssemblies (16ms)
+			InitializePlatformSupportModulesInManaged (23ms)
+			SetLoadedEditorAssemblies (18ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (5ms)
-			ProcessInitializeOnLoadAttributes (274ms)
-			ProcessInitializeOnLoadMethodAttributes (101ms)
+			BeforeProcessingInitializeOnLoad (10ms)
+			ProcessInitializeOnLoadAttributes (391ms)
+			ProcessInitializeOnLoadMethodAttributes (150ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -115,91 +115,386 @@ Domain Reload Profiling: 1264ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.703 seconds
-Refreshing native plugins compatible for Editor in 5.73 ms, found 3 plugins.
+- Loaded All Assemblies, in  2.071 seconds
+Refreshing native plugins compatible for Editor in 11.49 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.342 seconds
-Domain Reload Profiling: 3044ms
-	BeginReloadAssembly (405ms)
+- Finished resetting the current domain, in  2.656 seconds
+Domain Reload Profiling: 4724ms
+	BeginReloadAssembly (567ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (16ms)
+		DisableScriptedObjects (29ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (43ms)
-	RebuildCommonClasses (88ms)
-	RebuildNativeTypeToScriptingClass (30ms)
-	initialDomainReloadingComplete (90ms)
-	LoadAllAssembliesAndSetupDomain (1088ms)
-		LoadAssemblies (752ms)
+		CreateAndSetChildDomain (55ms)
+	RebuildCommonClasses (145ms)
+	RebuildNativeTypeToScriptingClass (47ms)
+	initialDomainReloadingComplete (148ms)
+	LoadAllAssembliesAndSetupDomain (1160ms)
+		LoadAssemblies (937ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (592ms)
-			TypeCache.Refresh (494ms)
-				TypeCache.ScanAssembly (446ms)
-			ScanForSourceGeneratedMonoScriptInfo (71ms)
+		AnalyzeDomain (567ms)
+			TypeCache.Refresh (471ms)
+				TypeCache.ScanAssembly (422ms)
+			ScanForSourceGeneratedMonoScriptInfo (68ms)
 			ResolveRequiredComponents (23ms)
-	FinalizeReload (1342ms)
+	FinalizeReload (2658ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1021ms)
+		SetupLoadedEditorAssemblies (2119ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (8ms)
-			SetLoadedEditorAssemblies (7ms)
+			InitializePlatformSupportModulesInManaged (13ms)
+			SetLoadedEditorAssemblies (14ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (110ms)
-			ProcessInitializeOnLoadAttributes (843ms)
-			ProcessInitializeOnLoadMethodAttributes (47ms)
-			AfterProcessingInitializeOnLoad (6ms)
+			BeforeProcessingInitializeOnLoad (187ms)
+			ProcessInitializeOnLoadAttributes (1837ms)
+			ProcessInitializeOnLoadMethodAttributes (64ms)
+			AfterProcessingInitializeOnLoad (5ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (12ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 3.23 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (18ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.14 seconds
+Refreshing native plugins compatible for Editor in 17.93 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3338 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 45 unused Assets / (131.0 KB). Loaded Objects now: 3801.
-Memory consumption went from 135.2 MB to 135.1 MB.
-Total: 4.516700 ms (FindLiveObjects: 0.326700 ms CreateObjectMapping: 0.305900 ms MarkObjects: 3.680800 ms  DeleteObjects: 0.202200 ms)
+Unloading 45 unused Assets / (130.9 KB). Loaded Objects now: 3801.
+Memory consumption went from 135.3 MB to 135.2 MB.
+Total: 11.038100 ms (FindLiveObjects: 0.477100 ms CreateObjectMapping: 0.505300 ms MarkObjects: 9.747000 ms  DeleteObjects: 0.306600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
   custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 1058859.046519 seconds.
-  path: Assets/SMaterial/Açık yeşil.mat
-  artifactKey: Guid(dd5984f9189514b4bb5e72b17061a64e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SMaterial/Açık yeşil.mat using Guid(dd5984f9189514b4bb5e72b17061a64e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82137100f5853f2d11c8fcc7ad65f4ca') in 0.180226 seconds
+  Time since last request: 1060562.475929 seconds.
+  path: Assets/Prefabs/Charger.prefab
+  artifactKey: Guid(4fb2129388793ca4190e271113a59d7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Charger.prefab using Guid(4fb2129388793ca4190e271113a59d7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f984235fb8028d764942a36847731f9d') in 0.337272 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/Prefabs/ROADmain.prefab
+  artifactKey: Guid(a992d369ed5fcc74386d5965d6c191a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ROADmain.prefab using Guid(a992d369ed5fcc74386d5965d6c191a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7e867f7cacb29217be624dd0275c363') in 0.048318 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 17
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Prefabs/Player.prefab
+  artifactKey: Guid(d3aa020ccc3f14c43886a08197ec641f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player.prefab using Guid(d3aa020ccc3f14c43886a08197ec641f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '257f3826a8a92b01f1b0b195035b87cc') in 0.035762 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
 ========================================================================
 Received Import Request.
   Time since last request: 0.000052 seconds.
-  path: Assets/SZombie
-  artifactKey: Guid(303df7667c65f8b42aa79a4fe47700a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SZombie using Guid(303df7667c65f8b42aa79a4fe47700a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6575e287d454284ebf20819240ad8b2') in 0.000591 seconds
+  path: Assets/Prefabs/future_car.prefab
+  artifactKey: Guid(1fea465fc7f262647b43fbfe30ff796e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/future_car.prefab using Guid(1fea465fc7f262647b43fbfe30ff796e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16800d83904be8621d9441e08a52719c') in 0.096093 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 56
+========================================================================
+Received Import Request.
+  Time since last request: 52.564458 seconds.
+  path: Assets/SAudio/Attack.mp3
+  artifactKey: Guid(0eb62d186b2f5ff479318d754a948572) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SAudio/Attack.mp3 using Guid(0eb62d186b2f5ff479318d754a948572) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc9054c3a231784018c00d636b81048d') in 0.073028 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/SAudio/Walking.mp3
+  artifactKey: Guid(13ecc16ad6587cc44b09e6952d9420b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SAudio/Walking.mp3 using Guid(13ecc16ad6587cc44b09e6952d9420b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d8ce69da50a467f299dd2aad80861e6') in 0.029164 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 12.593591 seconds.
+  path: Assets/Scenes/Samed.unity
+  artifactKey: Guid(ada3a82ac8099394fa8db90b79d6a2a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Samed.unity using Guid(ada3a82ac8099394fa8db90b79d6a2a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9140d821dc6600df27a04caf93a0129a') in 0.000411 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
+Received Import Request.
+  Time since last request: 61.337151 seconds.
+  path: Assets/SPrefeb/Zombie.prefab
+  artifactKey: Guid(9ff8d5f17d572494ba54869b99aef16a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SPrefeb/Zombie.prefab using Guid(9ff8d5f17d572494ba54869b99aef16a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1105329dac7288c6c016335884254c3e') in 0.004352 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 23.910142 seconds.
+  path: Assets/SPrefeb/Zombie.prefab
+  artifactKey: Guid(9ff8d5f17d572494ba54869b99aef16a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SPrefeb/Zombie.prefab using Guid(9ff8d5f17d572494ba54869b99aef16a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d8438ab9823107c48425d3c3366c481') in 0.127114 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 323
+========================================================================
 Received Prepare
-Refreshing native plugins compatible for Editor in 5.65 ms, found 3 plugins.
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.827 seconds
+Refreshing native plugins compatible for Editor in 5.13 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.722 seconds
+Domain Reload Profiling: 3548ms
+	BeginReloadAssembly (299ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (11ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (71ms)
+	RebuildCommonClasses (76ms)
+	RebuildNativeTypeToScriptingClass (30ms)
+	initialDomainReloadingComplete (53ms)
+	LoadAllAssembliesAndSetupDomain (368ms)
+		LoadAssemblies (502ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (27ms)
+			TypeCache.Refresh (13ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (12ms)
+	FinalizeReload (2723ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1694ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (14ms)
+			SetLoadedEditorAssemblies (14ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (177ms)
+			ProcessInitializeOnLoadAttributes (1423ms)
+			ProcessInitializeOnLoadMethodAttributes (61ms)
+			AfterProcessingInitializeOnLoad (6ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (12ms)
+Refreshing native plugins compatible for Editor in 3.56 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 2 unused Assets / (74.2 KB). Loaded Objects now: 3843.
-Memory consumption went from 80.0 MB to 79.9 MB.
-Total: 7.163900 ms (FindLiveObjects: 0.358700 ms CreateObjectMapping: 0.276400 ms MarkObjects: 6.448000 ms  DeleteObjects: 0.079800 ms)
+Unloading 3298 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 23 unused Assets / (101.5 KB). Loaded Objects now: 3830.
+Memory consumption went from 134.8 MB to 134.7 MB.
+Total: 4.193600 ms (FindLiveObjects: 0.376700 ms CreateObjectMapping: 0.371300 ms MarkObjects: 3.364800 ms  DeleteObjects: 0.079600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.803 seconds
+Refreshing native plugins compatible for Editor in 4.31 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.993 seconds
+Domain Reload Profiling: 3796ms
+	BeginReloadAssembly (284ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (18ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (65ms)
+	RebuildCommonClasses (78ms)
+	RebuildNativeTypeToScriptingClass (21ms)
+	initialDomainReloadingComplete (47ms)
+	LoadAllAssembliesAndSetupDomain (372ms)
+		LoadAssemblies (498ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (29ms)
+			TypeCache.Refresh (13ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (14ms)
+	FinalizeReload (2994ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1886ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (16ms)
+			SetLoadedEditorAssemblies (12ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (197ms)
+			ProcessInitializeOnLoadAttributes (1590ms)
+			ProcessInitializeOnLoadMethodAttributes (64ms)
+			AfterProcessingInitializeOnLoad (6ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (19ms)
+Refreshing native plugins compatible for Editor in 5.77 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3298 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 23 unused Assets / (101.6 KB). Loaded Objects now: 3845.
+Memory consumption went from 136.7 MB to 136.6 MB.
+Total: 15.611800 ms (FindLiveObjects: 2.284400 ms CreateObjectMapping: 1.727600 ms MarkObjects: 11.481100 ms  DeleteObjects: 0.116900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  2.355 seconds
+Refreshing native plugins compatible for Editor in 4.34 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  4.016 seconds
+Domain Reload Profiling: 6375ms
+	BeginReloadAssembly (895ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (35ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (341ms)
+	RebuildCommonClasses (111ms)
+	RebuildNativeTypeToScriptingClass (37ms)
+	initialDomainReloadingComplete (83ms)
+	LoadAllAssembliesAndSetupDomain (1231ms)
+		LoadAssemblies (1520ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (80ms)
+			TypeCache.Refresh (33ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (42ms)
+	FinalizeReload (4017ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1950ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (17ms)
+			SetLoadedEditorAssemblies (23ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (267ms)
+			ProcessInitializeOnLoadAttributes (1572ms)
+			ProcessInitializeOnLoadMethodAttributes (59ms)
+			AfterProcessingInitializeOnLoad (13ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (25ms)
+Refreshing native plugins compatible for Editor in 6.08 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3298 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 23 unused Assets / (101.5 KB). Loaded Objects now: 3860.
+Memory consumption went from 138.7 MB to 138.6 MB.
+Total: 7.310500 ms (FindLiveObjects: 0.500200 ms CreateObjectMapping: 0.611900 ms MarkObjects: 6.099200 ms  DeleteObjects: 0.097900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.980 seconds
+Refreshing native plugins compatible for Editor in 3.98 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  3.639 seconds
+Domain Reload Profiling: 4618ms
+	BeginReloadAssembly (292ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (10ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (68ms)
+	RebuildCommonClasses (80ms)
+	RebuildNativeTypeToScriptingClass (28ms)
+	initialDomainReloadingComplete (56ms)
+	LoadAllAssembliesAndSetupDomain (522ms)
+		LoadAssemblies (652ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (36ms)
+			TypeCache.Refresh (15ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (19ms)
+	FinalizeReload (3640ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (2168ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (15ms)
+			SetLoadedEditorAssemblies (24ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (229ms)
+			ProcessInitializeOnLoadAttributes (1817ms)
+			ProcessInitializeOnLoadMethodAttributes (73ms)
+			AfterProcessingInitializeOnLoad (9ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (17ms)
+Refreshing native plugins compatible for Editor in 12.00 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3298 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 23 unused Assets / (101.5 KB). Loaded Objects now: 3875.
+Memory consumption went from 140.6 MB to 140.5 MB.
+Total: 9.295300 ms (FindLiveObjects: 0.599300 ms CreateObjectMapping: 0.534500 ms MarkObjects: 8.036000 ms  DeleteObjects: 0.123600 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -217,441 +512,212 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 19.668576 seconds.
-  path: Assets/SZombie/New Folder
-  artifactKey: Guid(5f71bb45e9d24b44aabaf6baaf9cc129) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SZombie/New Folder using Guid(5f71bb45e9d24b44aabaf6baaf9cc129) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea6d644a3100475596e008d26a3af3e6') in 0.002348 seconds
+  Time since last request: 572.055748 seconds.
+  path: Assets/SScripts/ZombieHand.cs
+  artifactKey: Guid(70cb6c16ff2bc6f4f8fa1ece9be88cf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SScripts/ZombieHand.cs using Guid(70cb6c16ff2bc6f4f8fa1ece9be88cf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32e71d03725afb68dcecac4ed8bba1df') in 0.016308 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
-Received Import Request.
-  Time since last request: 28.101650 seconds.
-  path: Assets/SZombie/Model
-  artifactKey: Guid(5f71bb45e9d24b44aabaf6baaf9cc129) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SZombie/Model using Guid(5f71bb45e9d24b44aabaf6baaf9cc129) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d951cde2a7b283ec5b2a5a9da389c2b') in 0.000554 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.910 seconds
+Refreshing native plugins compatible for Editor in 3.64 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  3.857 seconds
+Domain Reload Profiling: 4766ms
+	BeginReloadAssembly (311ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (13ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (71ms)
+	RebuildCommonClasses (83ms)
+	RebuildNativeTypeToScriptingClass (28ms)
+	initialDomainReloadingComplete (57ms)
+	LoadAllAssembliesAndSetupDomain (429ms)
+		LoadAssemblies (579ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (23ms)
+			TypeCache.Refresh (11ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (3858ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (2229ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (16ms)
+			SetLoadedEditorAssemblies (16ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (206ms)
+			ProcessInitializeOnLoadAttributes (1898ms)
+			ProcessInitializeOnLoadMethodAttributes (84ms)
+			AfterProcessingInitializeOnLoad (9ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (20ms)
+Refreshing native plugins compatible for Editor in 4.71 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3298 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 23 unused Assets / (101.5 KB). Loaded Objects now: 3890.
+Memory consumption went from 142.5 MB to 142.4 MB.
+Total: 6.666300 ms (FindLiveObjects: 0.504900 ms CreateObjectMapping: 0.425300 ms MarkObjects: 5.633500 ms  DeleteObjects: 0.100600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.835 seconds
+Refreshing native plugins compatible for Editor in 4.23 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  3.186 seconds
+Domain Reload Profiling: 4021ms
+	BeginReloadAssembly (277ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (11ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (66ms)
+	RebuildCommonClasses (77ms)
+	RebuildNativeTypeToScriptingClass (29ms)
+	initialDomainReloadingComplete (54ms)
+	LoadAllAssembliesAndSetupDomain (396ms)
+		LoadAssemblies (519ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (31ms)
+			TypeCache.Refresh (12ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (16ms)
+	FinalizeReload (3187ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (2094ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (12ms)
+			SetLoadedEditorAssemblies (15ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (192ms)
+			ProcessInitializeOnLoadAttributes (1788ms)
+			ProcessInitializeOnLoadMethodAttributes (75ms)
+			AfterProcessingInitializeOnLoad (10ms)
+			EditorAssembliesLoaded (2ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (19ms)
+Refreshing native plugins compatible for Editor in 6.72 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3298 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 23 unused Assets / (101.4 KB). Loaded Objects now: 3905.
+Memory consumption went from 144.5 MB to 144.4 MB.
+Total: 8.587000 ms (FindLiveObjects: 0.732700 ms CreateObjectMapping: 1.578200 ms MarkObjects: 6.181000 ms  DeleteObjects: 0.093300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.827 seconds
+Refreshing native plugins compatible for Editor in 3.67 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  3.006 seconds
+Domain Reload Profiling: 3832ms
+	BeginReloadAssembly (318ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (12ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (62ms)
+	RebuildCommonClasses (77ms)
+	RebuildNativeTypeToScriptingClass (25ms)
+	initialDomainReloadingComplete (51ms)
+	LoadAllAssembliesAndSetupDomain (354ms)
+		LoadAssemblies (522ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (28ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (17ms)
+	FinalizeReload (3007ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1852ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (15ms)
+			SetLoadedEditorAssemblies (17ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (190ms)
+			ProcessInitializeOnLoadAttributes (1547ms)
+			ProcessInitializeOnLoadMethodAttributes (72ms)
+			AfterProcessingInitializeOnLoad (10ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (19ms)
+Refreshing native plugins compatible for Editor in 10.71 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3298 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 23 unused Assets / (101.5 KB). Loaded Objects now: 3920.
+Memory consumption went from 146.4 MB to 146.3 MB.
+Total: 6.694800 ms (FindLiveObjects: 0.487900 ms CreateObjectMapping: 0.586800 ms MarkObjects: 5.454000 ms  DeleteObjects: 0.164400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 9.854132 seconds.
-  path: Assets/SZombie/Model/Vanguard By T. Choonyung.fbx
-  artifactKey: Guid(582338e6ffc2b7641b75190ea5c61dc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SZombie/Model/Vanguard By T. Choonyung.fbx using Guid(582338e6ffc2b7641b75190ea5c61dc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ed56a78906da24fa50b00b60b951767') in 0.151153 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 145
-========================================================================
-Received Import Request.
-  Time since last request: 16.554354 seconds.
-  path: Assets/SZombie/Vanguard By T. Choonyung@Walking.fbx
-  artifactKey: Guid(52456d020a9aab84ea4f900ed566843c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SZombie/Vanguard By T. Choonyung@Walking.fbx using Guid(52456d020a9aab84ea4f900ed566843c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1bc6d0d414dd992302931a0c64478680') in 0.006269 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 135
-========================================================================
-Received Import Request.
-  Time since last request: 20.175036 seconds.
-  path: Assets/SZombie/Model/Vanguard By T. Choonyung.fbx
-  artifactKey: Guid(582338e6ffc2b7641b75190ea5c61dc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SZombie/Model/Vanguard By T. Choonyung.fbx using Guid(582338e6ffc2b7641b75190ea5c61dc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9c698778f103c5e30c910c7e5dcd1e3') in 0.068035 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 147
-========================================================================
-Received Import Request.
-  Time since last request: 22.591494 seconds.
-  path: Assets/SZombie/Model/Vanguard By T. Choonyung.fbx
-  artifactKey: Guid(582338e6ffc2b7641b75190ea5c61dc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SZombie/Model/Vanguard By T. Choonyung.fbx using Guid(582338e6ffc2b7641b75190ea5c61dc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eeb6ce3dfb3f203a5a7e7d3cfe659a01') in 0.133333 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 149
-========================================================================
-Received Import Request.
-  Time since last request: 4.741586 seconds.
-  path: Assets/SZombie/Model/Vanguard By T. Choonyung.fbx
-  artifactKey: Guid(582338e6ffc2b7641b75190ea5c61dc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SZombie/Model/Vanguard By T. Choonyung.fbx using Guid(582338e6ffc2b7641b75190ea5c61dc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fc71792c5b2ef533fa6e7aa3a4112fa') in 0.135144 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 149
-========================================================================
-Received Import Request.
-  Time since last request: 4.162937 seconds.
-  path: Assets/SZombie/Model/Vanguard By T. Choonyung.fbx
-  artifactKey: Guid(582338e6ffc2b7641b75190ea5c61dc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SZombie/Model/Vanguard By T. Choonyung.fbx using Guid(582338e6ffc2b7641b75190ea5c61dc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b708a8dcd88876a99e6206e694608f5') in 0.105575 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 149
-========================================================================
-Received Import Request.
-  Time since last request: 3.835739 seconds.
-  path: Assets/SZombie/Model/Vanguard By T. Choonyung.fbx
-  artifactKey: Guid(582338e6ffc2b7641b75190ea5c61dc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SZombie/Model/Vanguard By T. Choonyung.fbx using Guid(582338e6ffc2b7641b75190ea5c61dc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69ba97b2213e9d82e04b8f5cf24c6129') in 0.131852 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 149
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/SZombie/Model/vanguard_normal.png
-  artifactKey: Guid(54b211fa12aae4a42821cee7272133ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SZombie/Model/vanguard_normal.png using Guid(54b211fa12aae4a42821cee7272133ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcc7ed1ad1926b7592c506a08fdeeae9') in 0.072537 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 15.065040 seconds.
-  path: Assets/SZombie/Model/Textures Materials/vanguard_normal - Copy.png
-  artifactKey: Guid(54b211fa12aae4a42821cee7272133ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SZombie/Model/Textures Materials/vanguard_normal - Copy.png using Guid(54b211fa12aae4a42821cee7272133ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '399641940df94581f89d7cc6446a4088') in 0.031490 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.606498 seconds.
-  path: Assets/SZombie/Model/Textures Materials
-  artifactKey: Guid(46a20956b62b38147a1cb343825f09c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SZombie/Model/Textures Materials using Guid(46a20956b62b38147a1cb343825f09c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b0afaa1565b4f1b7b4beb3d649c334a') in 0.000504 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.050773 seconds.
-  path: Assets/SZombie/Model/Textures Materials/vanguard_diffuse1.png
-  artifactKey: Guid(6dbae532ccd598f41a375f1c7d3bc145) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SZombie/Model/Textures Materials/vanguard_diffuse1.png using Guid(6dbae532ccd598f41a375f1c7d3bc145) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0ed22d05218f6a3652138e2c0b4a13c') in 0.026004 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/SZombie/Model/Textures Materials/Vanguard_VisorMat.mat
-  artifactKey: Guid(d86a7b0ca0ac18241a8c2e192d069566) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SZombie/Model/Textures Materials/Vanguard_VisorMat.mat using Guid(d86a7b0ca0ac18241a8c2e192d069566) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb507cff23b3c74182df36bdab93b3a0') in 0.028335 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/SZombie/Model/Textures Materials/vanguard_normal.png
-  artifactKey: Guid(c16bbf38a702d1442b7fb643f9e16590) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SZombie/Model/Textures Materials/vanguard_normal.png using Guid(c16bbf38a702d1442b7fb643f9e16590) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '944ed166935e2e60fead8d89470cd391') in 0.036762 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 4.700023 seconds.
-  path: Assets/SZombie/Model/Textures Materials/Vanguard_VisorMat.mat
-  artifactKey: Guid(d86a7b0ca0ac18241a8c2e192d069566) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SZombie/Model/Textures Materials/Vanguard_VisorMat.mat using Guid(d86a7b0ca0ac18241a8c2e192d069566) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0189321cb0e05792e9b9feefffed4923') in 0.027547 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 4.143422 seconds.
-  path: Assets/SZombie/Model/Vanguard By T. Choonyung.fbx
-  artifactKey: Guid(582338e6ffc2b7641b75190ea5c61dc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SZombie/Model/Vanguard By T. Choonyung.fbx using Guid(582338e6ffc2b7641b75190ea5c61dc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bc24b0e94ddd1fe02897e8f5435e8c1') in 0.055281 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 147
-========================================================================
-Received Import Request.
-  Time since last request: 53.093934 seconds.
-  path: Assets/SZombie/Model/Vanguard By T. Choonyung.fbx
-  artifactKey: Guid(582338e6ffc2b7641b75190ea5c61dc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SZombie/Model/Vanguard By T. Choonyung.fbx using Guid(582338e6ffc2b7641b75190ea5c61dc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c02b49a85c23138271c0364a19f9ddc7') in 0.109830 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 145
-========================================================================
-Received Import Request.
-  Time since last request: 3.827125 seconds.
-  path: Assets/SZombie/Model/Vanguard By T. Choonyung.fbx
-  artifactKey: Guid(582338e6ffc2b7641b75190ea5c61dc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SZombie/Model/Vanguard By T. Choonyung.fbx using Guid(582338e6ffc2b7641b75190ea5c61dc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc85b04742f1be7174d66be5fc5d8047') in 0.050983 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 145
-========================================================================
-Received Import Request.
-  Time since last request: 7.266147 seconds.
-  path: Assets/SZombie/Model/Textures Materials/vanguard_diffuse1.png
-  artifactKey: Guid(77141fb27b7b1a1428e4268f19b8851e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SZombie/Model/Textures Materials/vanguard_diffuse1.png using Guid(77141fb27b7b1a1428e4268f19b8851e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bbce909c26ee8325d0e2ff8e5fd8e01') in 0.026700 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/SZombie/Model/Textures Materials/vanguard_specular.png
-  artifactKey: Guid(fa6be8829b8ac9c41a822222af366c24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SZombie/Model/Textures Materials/vanguard_specular.png using Guid(fa6be8829b8ac9c41a822222af366c24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fbcc6376b94821dadb28bcd76fe2fc1') in 0.030652 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 9.975493 seconds.
-  path: Assets/SZombie/Model/Vanguard By T. Choonyung.fbx
-  artifactKey: Guid(582338e6ffc2b7641b75190ea5c61dc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SZombie/Model/Vanguard By T. Choonyung.fbx using Guid(582338e6ffc2b7641b75190ea5c61dc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee25bd7047f8952eb0c32b57853f08b8') in 0.133943 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 145
-========================================================================
-Received Import Request.
-  Time since last request: 8.085202 seconds.
-  path: Assets/SZombie/Model/Textures Materials/vanguard_diffuse1 1.png
-  artifactKey: Guid(333cd8c5dea8d704186a832f771e6d7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SZombie/Model/Textures Materials/vanguard_diffuse1 1.png using Guid(333cd8c5dea8d704186a832f771e6d7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d7b8cc2eaa4df847d21d3e49c19f0d2') in 0.031325 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 39.519506 seconds.
-  path: Assets/SZombie/Model/Vanguard By T. Choonyung.fbx
-  artifactKey: Guid(582338e6ffc2b7641b75190ea5c61dc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SZombie/Model/Vanguard By T. Choonyung.fbx using Guid(582338e6ffc2b7641b75190ea5c61dc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34c0dd809f534e174ec45f41a8e5d4f5') in 0.099923 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 147
-========================================================================
-Received Import Request.
-  Time since last request: 4.898533 seconds.
-  path: Assets/SZombie/Model/Vanguard By T. Choonyung.fbx
-  artifactKey: Guid(582338e6ffc2b7641b75190ea5c61dc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SZombie/Model/Vanguard By T. Choonyung.fbx using Guid(582338e6ffc2b7641b75190ea5c61dc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e20f7114a2241df445fda05d536dc63') in 0.056580 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 147
-========================================================================
-Received Import Request.
-  Time since last request: 13.006104 seconds.
-  path: Assets/SZombie/Model/Vanguard By T. Choonyung.fbx
-  artifactKey: Guid(582338e6ffc2b7641b75190ea5c61dc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SZombie/Model/Vanguard By T. Choonyung.fbx using Guid(582338e6ffc2b7641b75190ea5c61dc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a55b7e4fa500004d93068a103c3d44eb') in 0.112577 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 147
-========================================================================
-Received Import Request.
-  Time since last request: 9.972388 seconds.
-  path: Assets/SZombie/Model/Textures Materials/vanguard_diffuse1.png
-  artifactKey: Guid(79db36a5434a11f489d50bead95e90ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SZombie/Model/Textures Materials/vanguard_diffuse1.png using Guid(79db36a5434a11f489d50bead95e90ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79ed4514c50686082fee1d0f5a395657') in 0.030187 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/SZombie/Model/Textures Materials/vanguard_specular.png
-  artifactKey: Guid(435a86d785baec2488f433b787b24a5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SZombie/Model/Textures Materials/vanguard_specular.png using Guid(435a86d785baec2488f433b787b24a5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3eb0a031269a0b1a7c6f8a18bf7d07ae') in 0.025919 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/SZombie/Model/Textures Materials/vanguard_normal.png
-  artifactKey: Guid(037023b971b61b64f919330e50e93e40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SZombie/Model/Textures Materials/vanguard_normal.png using Guid(037023b971b61b64f919330e50e93e40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d0b07a120a03063ce5c8577d49e5093') in 0.029995 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 84.032583 seconds.
-  path: Assets/SZombie/Model/Vanguard By T. Choonyung.fbx
-  artifactKey: Guid(582338e6ffc2b7641b75190ea5c61dc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SZombie/Model/Vanguard By T. Choonyung.fbx using Guid(582338e6ffc2b7641b75190ea5c61dc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0a856d401e5a8c7981ae8702486c76f') in 0.058371 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 145
-========================================================================
-Received Import Request.
-  Time since last request: 19.812259 seconds.
-  path: Assets/SZombie/Model/Vanguard By T. Choonyung.fbx
-  artifactKey: Guid(582338e6ffc2b7641b75190ea5c61dc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SZombie/Model/Vanguard By T. Choonyung.fbx using Guid(582338e6ffc2b7641b75190ea5c61dc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9996caeabb88d3a0a0c241ef664495b') in 0.130461 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 149
-========================================================================
-Received Import Request.
-  Time since last request: 3.945356 seconds.
-  path: Assets/SZombie/Model/Vanguard By T. Choonyung.fbx
-  artifactKey: Guid(582338e6ffc2b7641b75190ea5c61dc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SZombie/Model/Vanguard By T. Choonyung.fbx using Guid(582338e6ffc2b7641b75190ea5c61dc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d6753384004d7eee9021ab3ba229ab4') in 0.050463 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 149
-========================================================================
-Received Import Request.
-  Time since last request: 3.271110 seconds.
-  path: Assets/SZombie/Model/Vanguard By T. Choonyung.fbx
-  artifactKey: Guid(582338e6ffc2b7641b75190ea5c61dc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SZombie/Model/Vanguard By T. Choonyung.fbx using Guid(582338e6ffc2b7641b75190ea5c61dc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d381fea61479a86d05d919cb49bc95a') in 0.044117 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 149
-========================================================================
-Received Import Request.
-  Time since last request: 26.856774 seconds.
-  path: Assets/SPrefeb/Zombie.prefab
-  artifactKey: Guid(9ff8d5f17d572494ba54869b99aef16a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SPrefeb/Zombie.prefab using Guid(9ff8d5f17d572494ba54869b99aef16a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75b4abdda26b1c60af069db33f8c29ea') in 0.045387 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 175
-========================================================================
-Received Import Request.
-  Time since last request: 12.264694 seconds.
-  path: Assets/SPrefeb/Zombie.prefab
-  artifactKey: Guid(9ff8d5f17d572494ba54869b99aef16a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SPrefeb/Zombie.prefab using Guid(9ff8d5f17d572494ba54869b99aef16a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0e20ed2653e6dc9643659f6dd88657e') in 0.015134 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 176
-========================================================================
-Received Import Request.
-  Time since last request: 28.672285 seconds.
-  path: Assets/SPrefeb
-  artifactKey: Guid(bfd28f738f6312948a18f453f7e58764) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SPrefeb using Guid(bfd28f738f6312948a18f453f7e58764) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b1c5a1899fcfa83465362094696e6b8') in 0.000456 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 60.520988 seconds.
+  Time since last request: 224.824923 seconds.
   path: Assets/SZombie/Walking.anim
   artifactKey: Guid(4bfd0e3a82e45e74a9ae0de05c98bf11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SZombie/Walking.anim using Guid(4bfd0e3a82e45e74a9ae0de05c98bf11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd50cd471151973bb63024ce9fe832fc9') in 0.009729 seconds
+Start importing Assets/SZombie/Walking.anim using Guid(4bfd0e3a82e45e74a9ae0de05c98bf11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5570bde5637d19f4c5a85951d2cf8d06') in 0.053641 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 78.469231 seconds.
-  path: Assets/SZombie/Enemy.controller
-  artifactKey: Guid(0497b82bd8f1f7547bbb1c9275dee5d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SZombie/Enemy.controller using Guid(0497b82bd8f1f7547bbb1c9275dee5d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'acc065cbe976de2ba66bf62a634cdd8c') in 0.002303 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 21
-========================================================================
-Received Import Request.
-  Time since last request: 27.759594 seconds.
-  path: Assets/SZombie/Vanguard By T. Choonyung@Running.fbx
-  artifactKey: Guid(1e880c9b5ee2eb048a920736f67b3c35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SZombie/Vanguard By T. Choonyung@Running.fbx using Guid(1e880c9b5ee2eb048a920736f67b3c35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '530ea8d7b58c4aab8c9d91a579fd6a05') in 0.006018 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 135
-========================================================================
-Received Import Request.
-  Time since last request: 2.478038 seconds.
-  path: Assets/SZombie/Running.anim
-  artifactKey: Guid(533ddc99f0507bd459375cbb3754fe65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SZombie/Running.anim using Guid(533ddc99f0507bd459375cbb3754fe65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '434451ca5f1b6987f56f532819207034') in 0.007678 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 236.501138 seconds.
-  path: Assets/SZombie/Vanguard By T. Choonyung@Zombie Attack.fbx
-  artifactKey: Guid(bbe577ff53a5f85448d3119057c54075) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SZombie/Vanguard By T. Choonyung@Zombie Attack.fbx using Guid(bbe577ff53a5f85448d3119057c54075) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35c33835f9f69beff113b570b7015c9a') in 0.015655 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 135
-========================================================================
-Received Import Request.
-  Time since last request: 2.562357 seconds.
-  path: Assets/SZombie/Zombie Attack.anim
-  artifactKey: Guid(651941d9ea54bc0478042f7ed41190ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SZombie/Zombie Attack.anim using Guid(651941d9ea54bc0478042f7ed41190ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82aff764e5ed1629c7a92b2e1f03d285') in 0.011798 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 9.774160 seconds.
-  path: Assets/SZombie/Attack.anim
-  artifactKey: Guid(651941d9ea54bc0478042f7ed41190ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SZombie/Attack.anim using Guid(651941d9ea54bc0478042f7ed41190ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd16e53d20a4a1ebb5e20f9851688dbe') in 0.009439 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 67.878877 seconds.
-  path: Assets/SZombie/Vanguard By T. Choonyung@Dying Backwards.fbx
-  artifactKey: Guid(01fe6030e00bdec4cb9d0aeea73a0fd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SZombie/Vanguard By T. Choonyung@Dying Backwards.fbx using Guid(01fe6030e00bdec4cb9d0aeea73a0fd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e00a01277a08404fc85b037079dff474') in 0.005484 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 135
-========================================================================
-Received Import Request.
-  Time since last request: 2.951888 seconds.
-  path: Assets/SZombie/Dying Backwards.anim
-  artifactKey: Guid(d79e3c78ae8d8af42b9735cb8d29434c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SZombie/Dying Backwards.anim using Guid(d79e3c78ae8d8af42b9735cb8d29434c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c7613f3c1df6df2c3a035e50e9420b3') in 0.016725 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 89.687799 seconds.
-  path: Assets/SZombie/Vanguard By T. Choonyung@Falling Forward Death.fbx
-  artifactKey: Guid(e7b771075e417514d81da6b54faace80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SZombie/Vanguard By T. Choonyung@Falling Forward Death.fbx using Guid(e7b771075e417514d81da6b54faace80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cbd0fdbfdef65e91537ce78ce837d30') in 0.005712 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 135
-========================================================================
-Received Import Request.
-  Time since last request: 4.904568 seconds.
-  path: Assets/SZombie/Falling Forward Death.anim
-  artifactKey: Guid(f56c4e95f2cf4954281d1f79e626fe96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SZombie/Falling Forward Death.anim using Guid(f56c4e95f2cf4954281d1f79e626fe96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be13459aa074b7bc625db923f0a11c15') in 0.010287 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 112.188054 seconds.
-  path: Assets/SZombie/Vanguard By T. Choonyung@Neutral Idle.fbx
-  artifactKey: Guid(9532da012fcd4a2409ec187a2f5711d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SZombie/Vanguard By T. Choonyung@Neutral Idle.fbx using Guid(9532da012fcd4a2409ec187a2f5711d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c80f8fd33e13e47eef2f61ec149835d') in 0.006693 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 135
-========================================================================
-Received Import Request.
-  Time since last request: 3.985339 seconds.
-  path: Assets/SZombie/Neutral Idle.anim
-  artifactKey: Guid(3472f58d231b09241aa25b5a9edc83a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SZombie/Neutral Idle.anim using Guid(3472f58d231b09241aa25b5a9edc83a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44535c58f014be5785d91ec7a993789c') in 0.007800 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 15.420738 seconds.
-  path: Assets/SPrefeb/Zombie.prefab
-  artifactKey: Guid(9ff8d5f17d572494ba54869b99aef16a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SPrefeb/Zombie.prefab using Guid(9ff8d5f17d572494ba54869b99aef16a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3983e10190713c5d33862176ae0b03e') in 0.104954 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 182
-========================================================================
-Received Import Request.
-  Time since last request: 12.583416 seconds.
-  path: Assets/Scenes/Samed/NavMesh.asset
-  artifactKey: Guid(b887274e0d9431a4084fef119e24a412) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Samed/NavMesh.asset using Guid(b887274e0d9431a4084fef119e24a412) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7d904d398bbe10fead14644141ecf81') in 0.003457 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 13.222450 seconds.
-  path: Assets/SamedHierars/Environment.prefab
-  artifactKey: Guid(2992976e6a352d344aeebbc7a043b6da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SamedHierars/Environment.prefab using Guid(2992976e6a352d344aeebbc7a043b6da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3e2751cb3a05c90b07026998fe6c8fd') in 0.036265 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 101
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/SamedHierars/SoundManager.prefab
-  artifactKey: Guid(956adcc3bf42d874c84e870d3f3d1d01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SamedHierars/SoundManager.prefab using Guid(956adcc3bf42d874c84e870d3f3d1d01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5793c527ff403c6f50fd94c560a6720b') in 0.009937 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
-========================================================================
-Received Import Request.
-  Time since last request: 0.000042 seconds.
-  path: Assets/SamedHierars/Managers.prefab
-  artifactKey: Guid(bcd65e40228405c4bb0efd98d0b62f11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SamedHierars/Managers.prefab using Guid(bcd65e40228405c4bb0efd98d0b62f11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de946aa029be65ebbf961a69f7b5b74c') in 0.004848 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 11
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/SamedHierars/WaypointsManager.prefab
-  artifactKey: Guid(bcf5594664a49f2408dd5cc46ad90720) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SamedHierars/WaypointsManager.prefab using Guid(bcf5594664a49f2408dd5cc46ad90720) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64cd84ba4e6809b6b42bfa0d8cbb95ea') in 0.017489 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 65
