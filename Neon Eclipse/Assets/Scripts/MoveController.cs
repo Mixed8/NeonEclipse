@@ -13,7 +13,7 @@ public class MoveController : MonoBehaviour
     float mouseY;
     float currentCameraRotationX = 0f;
 
-    float sensitivity = 5f;
+    float sensitivity = 3f;
     float maxCameraAngle = 40f;  
     float minCameraAngle = -30f;
 
