@@ -23,7 +23,7 @@ public class CubeSelector : MonoBehaviour
     void Update()
     {
         // Space tuþuna basýldýðýnda ve canPressSpace true ise Start fonksiyonunu çaðýr
-        if (Input.GetKeyDown(KeyCode.Space) && canPressSpace)
+        if (Input.GetKeyDown(KeyCode.J) && canPressSpace)
         {
             Start();
             // Space tuþuna basma hakkýný 4 saniye boyunca kapat

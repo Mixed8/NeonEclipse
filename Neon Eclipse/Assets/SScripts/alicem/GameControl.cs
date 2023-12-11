@@ -20,18 +20,21 @@ public class GameControl : MonoBehaviour
     void Update()
     {
         if (picture[0].rotation.z == 0 &&
-            picture[0].rotation.y == 0 &&
+            
             picture[1].rotation.z == 0 &&
-            picture[1].rotation.y == 0 &&
+            
             picture[2].rotation.z == 0 &&
-            picture[2].rotation.y == 0 &&
+            
             picture[3].rotation.z == 0 &&
-            picture[3].rotation.y == 0 &&
+            
             picture[4].rotation.z == 0 &&
-            picture[4].rotation.y == 0)
+            picture[5].rotation.z == 0 &&
+            picture[6].rotation.z == 0 &&
+            picture[7].rotation.z == 0 &&
+            picture[8].rotation.z == 0 )
         {
             youWin = true;
-            Debug.Log("kazandýn");
+            print("kazandin");
         }
     }
 }
