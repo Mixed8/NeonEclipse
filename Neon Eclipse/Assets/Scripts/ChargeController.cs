@@ -37,12 +37,16 @@ public class ChargeController : MonoBehaviour
         if(!isVisible)
         {
             timeSinceLastPowerDecrease += Time.deltaTime;
-
+            gameObject.layer = LayerMask.NameToLayer("Default");
             if (timeSinceLastPowerDecrease >= powerDecreaseInterval)
             {
                 timeSinceLastPowerDecrease = 0f;
                 DecreasePower();
             }
+        }
+        else
+        {
+            gameObject.layer = LayerMask.NameToLayer("Target");
         }
         print(powerSupply);
     }

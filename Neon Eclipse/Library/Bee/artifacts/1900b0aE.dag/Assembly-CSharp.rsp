@@ -367,6 +367,7 @@
 "Assets/Scripts/MoveController.cs"
 "Assets/Scripts/PreSlide.cs"
 "Assets/Scripts/Psot.cs"
+"Assets/Scripts/Teleport.cs"
 "Assets/Scripts/UImanager.cs"
 "Assets/SScripts/alicem/GameControl.cs"
 "Assets/SScripts/alicem/PuzzleSolver.cs"
