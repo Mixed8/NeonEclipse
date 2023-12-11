@@ -7,6 +7,7 @@ public class CubeSelector : MonoBehaviour
     public GameObject[] xObjects; // x1, x2, x3, x4, x5, x6 boþ objelerini içeren dizi
     public Material greenMaterial; // Yeþil renk materyali
     public Material originalMaterial; // Baþlangýç materyali
+    public bool canPressSpace = true;
 
     void Start()
     {
@@ -17,6 +18,24 @@ public class CubeSelector : MonoBehaviour
 
         // 3 saniye sonra rengi deðiþen küplerin rengini originalMaterial ile deðiþtiren fonksiyonu çaðýr
         Invoke("RevertColorChanges", 3f);
+    }
+
+    void Update()
+    {
+        // Space tuþuna basýldýðýnda ve canPressSpace true ise Start fonksiyonunu çaðýr
+        if (Input.GetKeyDown(KeyCode.Space) && canPressSpace)
+        {
+            Start();
+            // Space tuþuna basma hakkýný 4 saniye boyunca kapat
+            StartCoroutine(DisableSpacePress());
+        }
+    }
+
+    IEnumerator DisableSpacePress()
+    {
+        canPressSpace = false;
+        yield return new WaitForSeconds(4f); // 4 saniye beklet
+        canPressSpace = true; // Space tuþuna basma hakkýný tekrar aç
     }
 
     //Tüm küplerin Triggerlarýný açma
